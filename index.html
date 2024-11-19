@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velkommen til tante Lenes julekalender 2024</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #323;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: #eee;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tante Lenes julekalender 2024 &#10084</h1>
+    </header>
+    <main>
+        <p>Velkommen til årets julekalender. Her kan du finne dagens gåte og kanskje vinne en premie hvis du er flink!</p>
+        <p>2024 &#x2764 TEMA: Hovedsteder i Europa &#x2764.</p>
+    </main>
+    <footer>
+        <p>Laget av Tante Lene</p>
+    </footer>
+
+</body>
+<img src="tante Lene og gutta.jpg" alt="Et beskrivende tekst" style="width: 600px;">
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Åpne dagens film med passordet fra kalenderen</title>
+</head>
+<body>
+    <h1>Her finner du julekalenderen</h1>
+    <p>Åpne dagens film med passordet fra kalenderen.</p>
+
+    <!-- Seksjon for 1.desember -->
+    <div>
+        <h2>1.desember</h2>
+        <p>For å se 1.desember, vennligst skriv inn passordet.</p>
+        <div>
+            <label for="password1">Passord:</label>
+            <input type="password" id="password1" />
+            <button onclick="checkPassword1()">Se 1.desember</button>
+        </div>
+        <div id="desember1-container" style="display:none;">
+            <video width="600" controls>
+                <source src="desember1.mp4" type="video/mp4">
+                Din nettleser støtter ikke video.
+            </video>
+        </div>
+    </div>
+
+    <!-- Seksjon for 2.desember -->
+    <div>
+        <h2>2.desember</h2>
+        <p>For å se 2.desember, vennligst skriv inn passordet.</p>
+        <div>
+            <label for="password2">Passord:</label>
+            <input type="password" id="password2" />
+            <button onclick="checkPassword2()">Se 2.desember</button>
+        </div>
+        <div id="desember2-container" style="display:none;">
+            <video width="600" controls>
+                <source src="desember2.mp4" type="video/mp4">
+                Din nettleser støtter ikke video.
+            </video>
+        </div>
+    </div>
+
+    <!-- JavaScript for passordbeskyttelse -->
+    <script>
+        // Passordkontroll for desember1
+        function checkPassword1() {
+            var password = document.getElementById("password1").value;
+            var correctPassword = "Hanne"; // Endre til passordet for desember1
+
+            if (password === correctPassword) {
+                document.getElementById("desember1-container").style.display = "block";
+                alert("Passordet er riktig! desember1 vises nå.");
+            } else {
+                alert("Feil passord for desember1. Prøv igjen.");
+            }
+        }
+
+        // Passordkontroll for desember2
+        function checkPassword2() {
+            var password = document.getElementById("password2").value;
+            var correctPassword = "Lene"; // Endre til passordet for desember2
+
+            if (password === correctPassword) {
+                document.getElementById("desember2-container").style.display = "block";
+                alert("Passordet er riktig! desember2 vises nå.");
+            } else {
+                alert("Feil passord for desember2. Prøv igjen.");
+            }
+        }
+    </script>
+</body>
+</html>
+
+</script>
